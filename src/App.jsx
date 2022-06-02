@@ -1,9 +1,12 @@
 import React from 'react'
+import Footer from './components/common/footer'
+import Header from './components/common/Header'
 
 function App() {
   return (
     <div>
-      <h1>Lets Start</h1>
+      <Header />
+      <Footer />
     </div>
   )
 }

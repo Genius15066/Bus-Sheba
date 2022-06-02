@@ -4,7 +4,7 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["plugin:react/recommended", "airbnb","prettier"],
+  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -16,6 +16,8 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "no-use-before-define": "off",
-    "semi": "off"
+    "semi": "off",
+    "arrow-body-style": 0,
+    "react/self-closing-comp":"off"
   }
 }

@@ -1,0 +1,53 @@
+.header_component{
+    position: fixed;
+    top:0;
+    width:100%;
+}
+.top_header{
+    background-color: $primary;
+    text-align: right;
+    padding: 10px ;
+    color: $white;
+    a{
+        @include font(18px,$white,500);
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.header_body{
+    img{
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+    }
+}
+
+.nav_header{
+    height:5em;
+    background-color: $secondary;
+    border-radius: 0 0 5px 5px;
+    box-shadow: inset 0 0 10px rgba(173, 151, 151, 0.5);
+    .brand_name{
+        @include font(2em,$black,bold);
+        text-align: center;
+    }
+}
+
+.bottom_header{
+    display: flex;
+    justify-content: space-around;
+    background-color: $primary;
+    padding:15px 10px;
+
+    h1{
+        @include font(2.5em,$white,600);
+        margin-top: 10px;
+    }
+
+    p{
+        @include font(1em,$white,400);
+        text-align: center;
+    }
+}
