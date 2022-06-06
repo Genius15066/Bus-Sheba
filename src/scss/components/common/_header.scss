@@ -1,7 +1,6 @@
 .header_component{
-    position: fixed;
-    top:0;
-    width:100%;
+    
+    width: 100%;
 }
 .top_header{
     background-color: $primary;
@@ -32,6 +31,19 @@
     .brand_name{
         @include font(2em,$black,bold);
         text-align: center;
+        margin-left:50px;
+    }
+
+    .link-style{
+        @include font(16px,lighten($black,20%),600);
+        font-family: $secondaryFont;
+        margin:0 17px;
+    }
+    .nav_public{
+        margin:0px 50px 0 80px;
+    }
+    .nav_private{
+        margin:0px 50px 0 70px;
     }
 }
 

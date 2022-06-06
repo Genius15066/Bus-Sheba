@@ -1,12 +1,10 @@
 import React from 'react'
-import Footer from './components/common/footer'
-import Header from './components/common/Header'
+import AppRouter from './AppRouter'
 
 function App() {
   return (
     <div>
-      <Header />
-      <Footer />
+      <AppRouter />
     </div>
   )
 }
