@@ -5,6 +5,7 @@ import Header from './components/common/header/Header'
 import BusDetailsPage from './pages/BusDetailsPage'
 import ContactPage from './pages/ContactPage'
 import HomePage from './pages/HomePage'
+import RouteDetailsPage from './pages/RouteDetailsPage'
 
 function AppRouter() {
   return (
@@ -14,6 +15,7 @@ function AppRouter() {
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/bus_details" element={<BusDetailsPage />} />
+        <Route path="/route_details" element={<RouteDetailsPage />} />
       </Routes>
       <Footer />
     </Router>

@@ -14,7 +14,7 @@ function NavBar() {
             <Nav.Link className="link-style" href="/bus_details">
               Add Bus
             </Nav.Link>
-            <Nav.Link className="link-style" href="/home">
+            <Nav.Link className="link-style" href="/route_details">
               Route Details
             </Nav.Link>
             <Nav.Link className="link-style" href="/link">
