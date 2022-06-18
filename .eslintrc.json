@@ -18,6 +18,8 @@
     "no-use-before-define": "off",
     "semi": "off",
     "arrow-body-style": 0,
-    "react/self-closing-comp":"off"
+    "react/self-closing-comp":"off",
+    "react/jsx-props-no-spreading": "off",
+    "eslint no-console":"off"
   }
 }
