@@ -1,9 +1,11 @@
 import React from 'react'
-import image from '../assets/images/banner.jpg'
+import image from '../assets/images/banner-img.jpg'
+import NavBar from '../components/common/header/NavBar2'
 
 function HomePage() {
   return (
     <div>
+      <NavBar />
       <section className="header_body">
         <img src={image} alt="" />
       </section>

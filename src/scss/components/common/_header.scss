@@ -2,18 +2,7 @@
     
     width: 100%;
 }
-.top_header{
-    background-color: $primary;
-    text-align: right;
-    padding: 10px ;
-    color: $white;
-    a{
-        @include font(18px,$white,500);
-        &:hover{
-            text-decoration: underline;
-        }
-    }
-}
+
 
 .header_body{
     img{
@@ -34,11 +23,7 @@
         margin-left:50px;
     }
 
-    .link-style{
-        @include font(16px,lighten($black,20%),600);
-        font-family: $secondaryFont;
-        margin:0 17px;
-    }
+   
     .nav_public{
         margin:0px 50px 0 80px;
     }
@@ -62,4 +47,9 @@
         @include font(1em,$white,400);
         text-align: center;
     }
+}
+.link_style{
+    @include font(16px,$black,600);
+    font-family: $secondaryFont;
+    margin:0 17px;
 }

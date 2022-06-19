@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 
-function LoginForm() {
+function SignUpForm() {
   const {
     register,
     handleSubmit,
@@ -51,4 +51,4 @@ function LoginForm() {
   )
 }
 
-export default LoginForm
+export default SignUpForm

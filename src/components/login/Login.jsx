@@ -1,15 +1,54 @@
-import { React } from 'react'
-import ContactForm from '../../forms/ContactForm'
+import { Button } from 'react-bootstrap'
+import { React, useState } from 'react'
+import SignInForm from '../../forms/SignInForm'
+import SignUpForm from '../../forms/SignUpForm'
 
-function Contact() {
+function Login() {
+  const [newUser, setNewUser] = useState(false)
+
   return (
-    <div>
-      <div className="form_head">
-        <h1>Login</h1>
+    <div className="login_style">
+      <div className="left">
+        <div className="title">
+          {newUser ? (
+            <h1 className="text-center mb-4">SignUp</h1>
+          ) : (
+            <h1 className="text-center mb-4">SignIn</h1>
+          )}
+        </div>
+        {newUser ? <SignUpForm /> : <SignInForm />}
       </div>
-      <ContactForm />
+
+      <div className="right">
+        <div className="reg_img">
+          {newUser ? (
+            <div className="reg_text">
+              <h2>Welcome Back</h2>
+              <p>If you already have an account, just sign in.</p>
+            </div>
+          ) : (
+            <div className="reg_text">
+              <h2>Glad to see you</h2>
+              <p>Sign up and Explore our website! Book your seat</p>
+            </div>
+          )}
+          {newUser ? (
+            <div className="img_btn">
+              <Button onClick={() => setNewUser(false)} className="reg_btn">
+                Sign In
+              </Button>
+            </div>
+          ) : (
+            <div className="img_btn">
+              <Button onClick={() => setNewUser(true)} className="reg_btn">
+                Sign Up
+              </Button>
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   )
 }
 
-export default Contact
+export default Login

@@ -1,5 +1,6 @@
 .form_head{
     @include font(20px,$black,500); 
+    margin-top: 80px;
     display:flex;
     justify-content: center;
     align-items: center;

@@ -1,6 +1,18 @@
 @mixin font($size,$color,$weight){
-    color:$color;
+    color:$color !important;
     font-size:$size;
     font-weight:$weight;
      
 }
+
+@mixin resize($height,$width){
+    height: $height;
+    width: $width;
+}
+
+@mixin center($display,$justifyContent,$alignItems){
+    display:$display;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
