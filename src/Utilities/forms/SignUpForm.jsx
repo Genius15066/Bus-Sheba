@@ -7,7 +7,7 @@ function SignUpForm() {
     handleSubmit,
     formState: { errors },
   } = useForm()
-
+  // const onSubmit = data => console.log(data);
   return (
     <form onSubmit={handleSubmit()} className="login_page">
       <input placeholder="Name" {...register('Name', { required: true })} />

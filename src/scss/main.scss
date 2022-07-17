@@ -3,8 +3,11 @@
 @import './override/bootstrap';
 @import './global/global';
 @import './global/reset';
-@import './components/common/header';
 @import './components/common/footer';
-@import './components/common/form';
 @import './components/common/tables';
-@import './components/login'
+@import './components/login';
+@import './components/common/navbar';
+// homepage componets import
+@import './components/home/home';
+@import './components/home/contact';
+@import '~react-pro-sidebar/dist/scss/styles.scss';

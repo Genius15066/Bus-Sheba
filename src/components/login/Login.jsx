@@ -1,7 +1,7 @@
 import { Button } from 'react-bootstrap'
 import { React, useState } from 'react'
-import SignInForm from '../../forms/SignInForm'
-import SignUpForm from '../../forms/SignUpForm'
+import SignInForm from '../../Utilities/forms/SignInForm'
+import SignUpForm from '../../Utilities/forms/SignUpForm'
 
 function Login() {
   const [newUser, setNewUser] = useState(false)

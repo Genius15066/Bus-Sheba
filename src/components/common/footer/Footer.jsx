@@ -45,9 +45,9 @@ function Footer() {
               <div className="p-2">
                 <h5 className="mb-3"> Contact Us </h5>
                 <p>
-                  House #__, Road #__,
+                  House #06, Road #12,
                   <br />
-                  Dhanmondi, Dhaka-____.
+                  Dhanmondi, Dhaka-1209.
                 </p>
                 <p>Email: support@bussheba.com.bd</p>
                 <p>Contact no: +8801705765568</p>
@@ -77,7 +77,7 @@ function Footer() {
         </div>
         <hr />
         <p className="text-center pt-3">
-          &copy; 2021 fvaly.com Limited. All rights reserved.
+          &copy; 2022 bus-sheba.com Limited. All rights reserved.
         </p>
       </Container>
     </div>
