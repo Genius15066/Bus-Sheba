@@ -10,13 +10,14 @@ function ManageBusTable() {
       .then((res) => res.json())
       .then((data) => setbuslist(data))
   }, [])
-  console.log(buslist)
+
   const deleteProduct = (id) => {
     const url = `https://localhost:7156/api/buslist/${id}`
     fetch(url, {
       method: 'DELETE',
     })
       .then((res) => res.json())
+      // eslint-disable-next-line no-console
       .then((result) => console.log(result))
   }
 
