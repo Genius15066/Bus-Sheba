@@ -11,6 +11,7 @@ function SignInForm() {
   return (
     <form onSubmit={handleSubmit()} className="login_page">
       <input
+        name="email"
         placeholder="Email ID"
         {...register('Email', {
           required: true,

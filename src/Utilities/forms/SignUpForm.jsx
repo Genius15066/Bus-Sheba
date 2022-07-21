@@ -7,9 +7,28 @@ function SignUpForm() {
     handleSubmit,
     formState: { errors },
   } = useForm()
-  // const onSubmit = data => console.log(data);
+
+  const onSubmit = (data) => {
+    const userData = {
+      name: data.Name,
+      email: data.Email,
+      password: data.Password,
+      mobile: data.Number,
+      city: data.City,
+    }
+    const url = `https://localhost:7156/api/userlist`
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(userData),
+      // eslint-disable-next-line no-unused-vars, no-console
+    }).then((res) => console.log(data))
+  }
+
   return (
-    <form onSubmit={handleSubmit()} className="login_page">
+    <form onSubmit={handleSubmit(onSubmit)} className="login_page">
       <input placeholder="Name" {...register('Name', { required: true })} />
       {errors.Name && <span className="warning">This field is required</span>}
       <input
